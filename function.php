@@ -1,7 +1,7 @@
 <?php
 
 function sanitize($string = '') {
-    return preg_replace('/[^\da-z]/i', '', $string);
+    return preg_replace('/[^\da-z-_]/i', '', $string);
 }
 
 function baseUrl() {
